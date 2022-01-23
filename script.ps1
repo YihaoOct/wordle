@@ -1,5 +1,5 @@
 $word = [Text.Encoding]::Utf8.GetString([Convert]::FromBase64String($OctopusParameters["Answer"]))
-$index = [int]$OctopusParameters["Index"] - 1
+$index = [int]$OctopusParameters["Ocotpus.Environment.Name"] - 1
 $letter = $OctopusParameters["Guess"][$index]
 
 if ($letter -eq $word[$index]) {
